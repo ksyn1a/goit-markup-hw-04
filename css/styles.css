@@ -86,8 +86,8 @@ html {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 /* Навігація */
@@ -232,7 +232,6 @@ html {
 
 .features-icon {
   display: flex;
-  outline: 2px solid red;
   width: 270px;
   height: 120px;
   background-size: contain;
@@ -344,14 +343,17 @@ html {
   border-radius: 50%;
 }
 
-.socials-link:hover,
-.socials-link:focus {
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
+.team-icon {
+  fill: #afb1b8;
 }
 
-.socials-icon {
-  fill: currentColor;
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+}
+.socials-link:hover .team-icon,
+.socials-link:focus .team-icon {
+  fill: var(--main-white-color);
 }
 
 /* Постійні клієнти */
@@ -411,7 +413,7 @@ html {
   display: inline-block;
 }
 
-.logo-color {
+.logo-white {
   color: var(--main-white-color);
 }
 
@@ -424,7 +426,10 @@ html {
   line-height: calc(24 / 14);
   color: var(--main-white-color);
 }
-/* НАЧЕ ТІЛЬКИ НИЖЧЕ ЗМІНЮВАВ */
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
 
 .footer-join-in {
   margin-bottom: 20px;
@@ -462,6 +467,7 @@ html {
 .portfolio .filter {
   background-color: var(--main-white-color);
 }
+
 /* Портфоліо фільтер */
 
 .filter-list {
@@ -487,10 +493,14 @@ html {
   border-radius: 4px;
 }
 
-.filter-btn:hover,
-.filter-btn:focus,
-.filter-list .active {
+.btn-active {
+  color: var(--main-white-color);
   background-color: var(--accent-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--main-white-color);
   cursor: pointer;
 }
@@ -526,4 +536,10 @@ html {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
