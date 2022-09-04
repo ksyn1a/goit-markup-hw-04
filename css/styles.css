@@ -394,25 +394,16 @@ html {
   padding-bottom: 60px;
   background-color: var(--main-bg-dark-color);
 }
-
 .address {
   font-style: normal;
-  /* margin-top: 20px; */
 }
-
-/* .footer-container {
-  display: flex;
-  align-items: baseline;
-  gap: 70px;
-} */
 
 .logo-footer {
-  margin-bottom: 20px;
-  display: inline-block;
+  color: var(--main-white-color);
 }
 
-.logo-color {
-  color: var(--main-white-color);
+.item {
+  margin-top: 20px;
 }
 
 .footer-item:not(:last-child) {
