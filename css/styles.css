@@ -394,16 +394,25 @@ html {
   padding-bottom: 60px;
   background-color: var(--main-bg-dark-color);
 }
+
 .address {
   font-style: normal;
+  /* margin-top: 20px; */
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
 }
 
 .logo-footer {
-  color: var(--main-white-color);
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
-.item {
-  margin-top: 20px;
+.logo-color {
+  color: var(--main-white-color);
 }
 
 .footer-item:not(:last-child) {
@@ -415,12 +424,7 @@ html {
   line-height: calc(24 / 14);
   color: var(--main-white-color);
 }
-
-.footer-right-side {
-  display: flex;
-  justify-content: space-evenly;
-  /* align-items: center; */
-}
+/* НАЧЕ ТІЛЬКИ НИЖЧЕ ЗМІНЮВАВ */
 
 .footer-join-in {
   margin-bottom: 20px;
@@ -429,6 +433,28 @@ html {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--main-white-color);
+}
+.footer-right-list {
+  display: flex;
+  gap: 10px;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+}
+.socials-icon {
+  fill: var(--main-white-color);
 }
 
 /* Сторінка Портфоліо */
