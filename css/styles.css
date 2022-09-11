@@ -426,7 +426,7 @@ html {
 }
 
 .footer-contacts:hover,
-.footer-cotacts:focus {
+.footer-contacts:focus {
   color: var(--accent-color);
 }
 
